@@ -1,0 +1,169 @@
+.mobile-nav {
+    width: 100vw;
+
+
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    display: none;
+
+}
+
+
+.mob-logo {
+    background: #1876f2;
+    width: 100%;
+    height: 50%;
+    padding-top: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gray;
+
+}
+
+.mob-p-pic {
+    width: 45px;
+    border-radius: 50%;
+    margin-bottom: 4px;
+    margin-right: 1rem;
+    cursor: pointer;
+
+}
+
+.s {
+    width: 150px;
+}
+
+
+
+
+.mob-navigation {
+    background: rgb(197, 197, 197);
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.649);
+
+}
+
+.cont-cent {
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.cont-cent img {
+    width: 45px;
+    cursor: pointer;
+    border: 4px solid transparent;
+    transition: all 0.4s;
+
+}
+
+.cont-cent img:hover {
+    border-bottom: 4px solid black;
+}
+
+
+.cont-cent .mk-small {
+    width: 32px;
+    padding-bottom: 12px;
+    margin-top: 8px;
+
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width:500px) {
+    body {
+        padding-top: 6.5rem;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    .container .left-sidebar {
+        display: none;
+    }
+
+    .container .right-sidebar {
+        position: absolute;
+        top: -58rem;
+        right: 2rem;
+        width: 60vw;
+        box-shadow: -4px 4px 16px rgba(0, 0, 0, 0.636);
+        border-radius: 12px;
+        transition: all 0.7s;
+
+
+
+
+    }
+
+    .container {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+
+
+
+    }
+
+
+    .write-post-containe {
+        text-decoration: none;
+    }
+
+    .story-gallery {
+        position: relative;
+
+
+
+
+    }
+
+    .story-gallery div {
+        height: 150px;
+
+    }
+}
+
+
+.right-sidebar button {
+    background-color: transparent;
+    border: transparent;
+    padding: 3px 5px;
+    font-size: 15px;
+    font-style: italic;
+    position: relative;
+    top: -10px;
+    right: -10px;
+    cursor: pointer;
+
+
+}
+
+.right-sidebar button:hover {
+    color: red;
+}
